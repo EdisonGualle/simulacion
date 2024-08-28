@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::post('forgot-password', [ResetPasswordController::class, "resetPassword"]);
+Route::post('reset-password', [ResetPasswordController::class, "updatePassword"]);
 
 // Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 //     return $request->user();

@@ -14,9 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/reset-password', [ResetPasswordController::class, 'loadResetPasswordView']);
-Route::post('/reset-password', [ResetPasswordController::class, 'updatePassword'])->name('reset-password');
-
 Route::get('/', function () {
     return view('welcome');
 });
